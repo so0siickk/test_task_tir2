@@ -1,14 +1,27 @@
-import sqlalchemy as db
+from sqlalchemy.orm import DeclarativeBase
+from sqlalchemy.orm import Mapped
+from sqlalchemy.orm import mapped_column
+from sqlalchemy import String
+from typing import Optional
 
-engine = db.create_engine('sqlite:///users.db')
-conn = engine.connect()
-metadata = db.MetaData()
-users = db.Table('users', metadata,
-                 db.Column('user_id', db.Integer, primary_key=True),
-                 db.Column('email', db.Text),
-                 db.Column('password', db.Integer),
-                 db.Column('twitter', db.Text),
-                 db.Column('wallet', db.Text),
-                 db.Column('balance', db.Integer),
-                 db.Column('status', db.Text))
-metadata.create_all(engine)
+
+class Base(DeclarativeBase):
+    pass
+
+
+class UserBase(Base):
+    __tablename__ = "users"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    email: Mapped[str] = mapped_column(String(30))
+    password: Mapped[str] = mapped_column(String(30))
+    twitter: Mapped[str] = mapped_column(String(30))
+    wallet: Mapped[str] = mapped_column(String(30))
+    balance: Mapped[Optional[int]] = mapped_column()
+    status: Mapped[Optional[str]] = mapped_column(String(30), default= "Created")
+
+
+
+    def __repr__(self) -> str:
+            return (f"UserBase(id={self.id}, email={self.email}, password={self.password}, twitter={self.twitter},"
+                    f" wallet={self.wallet}, balance={self.balance}, status={self.status})")
