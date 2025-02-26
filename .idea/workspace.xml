@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2b18a0c-8528-4937-9ee9-2cf727b99c16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/get_user_from_db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/login_website.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/update_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test_task_tir2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test_task_tir2.iml" afterDir="false" />
+    <list default="true" id="e2b18a0c-8528-4937-9ee9-2cf727b99c16" name="Changes" comment="База данных + класс юзер + тест">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repositores/librarian.py" beforeDir="false" afterPath="$PROJECT_DIR$/repositores/librarian.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/create_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/create_users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/classes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repositores/librarian.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/create_users.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/get_user_from_db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/login_website.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/update_db.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +28,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -53,10 +53,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Python.connect_wallet.executor": "Run",
     "Python.create_users.executor": "Run",
+    "Python.daily_transaction (1).executor": "Run",
+    "Python.daily_transaction.executor": "Run",
     "Python.database.executor": "Run",
     "Python.get_user_from_db.executor": "Run",
     "Python.librarian.executor": "Run",
+    "Python.login_website.executor": "Run",
+    "Python.update_db (1).executor": "Run",
     "Python.update_db.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -64,8 +70,8 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.update_db">
-    <configuration name="create_users" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.daily_transaction (1)">
+    <configuration name="daily_transaction (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test_task_tir2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,12 +80,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (test_task_tir2)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/create_users.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tests/daily_transaction.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -88,7 +93,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="daily_transaction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test_task_tir2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,12 +102,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (test_task_tir2)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/database.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/daily_transaction.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -133,7 +137,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="librarian" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="update_db (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test_task_tir2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,12 +146,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (test_task_tir2)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/repositores" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/repositores/librarian.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tests/update_db.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -179,19 +182,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.daily_transaction" />
+      <item itemvalue="Python.daily_transaction (1)" />
+      <item itemvalue="Python.update_db (1)" />
       <item itemvalue="Python.get_user_from_db" />
       <item itemvalue="Python.update_db" />
-      <item itemvalue="Python.create_users" />
-      <item itemvalue="Python.database" />
-      <item itemvalue="Python.librarian" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.daily_transaction (1)" />
+        <item itemvalue="Python.update_db (1)" />
+        <item itemvalue="Python.daily_transaction" />
         <item itemvalue="Python.update_db" />
         <item itemvalue="Python.get_user_from_db" />
-        <item itemvalue="Python.create_users" />
-        <item itemvalue="Python.librarian" />
-        <item itemvalue="Python.database" />
       </list>
     </recent_temporary>
   </component>
@@ -211,6 +214,35 @@
       <option name="presentableId" value="Default" />
       <updated>1740050172882</updated>
     </task>
+    <task id="LOCAL-00001" summary="База данных + класс юзер + тест">
+      <option name="closed" value="true" />
+      <created>1740179641379</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740179641379</updated>
+    </task>
+    <task id="LOCAL-00002" summary="База данных + класс юзер + тест">
+      <option name="closed" value="true" />
+      <created>1740179763870</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740179763870</updated>
+    </task>
+    <task id="LOCAL-00003" summary="База данных + класс юзер + тест">
+      <option name="closed" value="true" />
+      <created>1740179797815</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740179797815</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="База данных + класс юзер + тест" />
+    <option name="LAST_COMMIT_MESSAGE" value="База данных + класс юзер + тест" />
   </component>
 </project>

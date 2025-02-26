@@ -16,12 +16,12 @@ class UserBase(Base):
     email: Mapped[str] = mapped_column(String(30))
     password: Mapped[str] = mapped_column(String(30))
     twitter: Mapped[str] = mapped_column(String(30))
-    wallet: Mapped[str] = mapped_column(String(30))
+    wallet_address: Mapped[str] = mapped_column(String(30))
+    wallet_key: Mapped[str] = mapped_column(String(30))
     balance: Mapped[Optional[int]] = mapped_column()
-    status: Mapped[Optional[str]] = mapped_column(String(30), default= "Created")
-
-
+    status: Mapped[Optional[str]] = mapped_column(String(30), default="Created")
 
     def __repr__(self) -> str:
-            return (f"UserBase(id={self.id}, email={self.email}, password={self.password}, twitter={self.twitter},"
-                    f" wallet={self.wallet}, balance={self.balance}, status={self.status})")
+        return (f"UserBase(id={self.id}, email={self.email}, password={self.password}, twitter={self.twitter},"
+                f" wallet address={self.wallet_address}, wallet key={self.wallet_key}, balance={self.balance},"
+                f" status={self.status})")

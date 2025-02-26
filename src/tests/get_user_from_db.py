@@ -1,9 +1,10 @@
-from entities.classes import User
 import string
 import secrets
 
-from models.database import UserBase
-from repositores.librarian import create_user, create_db_and_tables, get_by_id, update_status
+from src.entities.classes import User, Wallet
+from src.models.database import UserBase
+from src.repositores.librarian import create_user, create_db_and_tables, get_by_email, get_by_id, get_by_twitter, \
+    get_by_wallet
 
 
 def create_password():
@@ -27,16 +28,15 @@ def create_email():
             break
     return email + "@gmail.com"
 
+
 create_db_and_tables()
-email2 = create_email()
-user1 = UserBase(email = create_email(),password = create_password(),twitter = "twitter1",wallet = "wallet1", balance = 0)
-user2 = UserBase(email = email2,password = create_password(),twitter = "twitter2",wallet = "wallet2", balance = 0)
-
-create_user(user1)
-create_user(user2)
-
-update_status(1,"Ready")
-update_status(email2, "Complete")
+wallet = Wallet("test_key", "test_address")
+user1 = User(create_email(), create_password(), "twitter", wallet)
+first_note = UserBase(email=user1.get_email(), password=user1.get_password(), twitter=user1.get_twitter(),
+                      wallet_address=user1.get_wallet().get_address(), wallet_key=user1.get_wallet().get_private_key())
+create_user(first_note)
 
 print(get_by_id(1))
-print(get_by_id(2))
+print(get_by_email(user1.get_email()))
+print(get_by_twitter(user1.get_twitter()))
+print(get_by_wallet(wallet.get_address()))
