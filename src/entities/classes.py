@@ -1,4 +1,5 @@
-import requests
+import asyncio
+import aiohttp
 import time
 from aptc import Account, new_client
 
@@ -94,27 +95,34 @@ class User:
     def set_status(self, status):
         self.status = status
 
-    def login_website(self):
-        login_data = {
-            'email': self.email,
-            'password': self.password,
-            'login_button': '1'
-        }
-        response = requests.post('https://castile.world//api/guest/login HTTP/2', data=login_data)
-        # print(response)
+    async def login_website(all_users: []):
+        url = 'https://castile.world//api/guest/login HTTP/2'
+        login_data = []
+        for user in all_users:
+            login_data.append({
+                'email': user.get_email,
+                'password': user.get_password,
+                'login_button': '1'
+            })
+        async with aiohttp.ClientSession() as session:
+            tasks = []
+            for current_data in login_data:
+                tasks.append(asyncio.create_task(session.post(url, data = current_data)))
+                responses = await asyncio.gather(*tasks)
 
-    def registration_website(self):
-        registration_data = {
-            "email": self.email,
-            "code": "888888",
-            "password": self.password,
-            "password_confirm": self.password,
-            "agree": True
-        }
-        response = requests.post('https://castile.world//api/guest/register', data=registration_data)
-        # print(response)
-
-    # def claim_daily_reward(self):
-
-
-#target=1892529638246609267&task=repost_twitter&uid=374361
+    async def registration_website(all_users:[]):
+        url = 'https://castile.world//api/guest/register'
+        registration_data = []
+        for user in all_users:
+            registration_data.append({
+                'email': user.get_email,
+                'code': "888888",
+                'password': user.get_password,
+                'password_confirm': user.get_password(),
+                'agree': True
+            })
+        async with aiohttp.ClientSession() as session:
+            tasks = []
+            for current_data in registration_data:
+                tasks.append(asyncio.create_task(session.post(url, data=current_data)))
+                responses = await asyncio.gather(*tasks)
