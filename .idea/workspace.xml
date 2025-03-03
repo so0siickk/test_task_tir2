@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2b18a0c-8528-4937-9ee9-2cf727b99c16" name="Changes" comment="База данных + класс юзер + тест">
+    <list default="true" id="e2b18a0c-8528-4937-9ee9-2cf727b99c16" name="Changes" comment="выполнение заданий с твиттером, клейм наград">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/classes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/database.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repositores/librarian.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/create_users.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/get_user_from_db.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/login_website.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/update_db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,27 +45,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Python.connect_wallet.executor": "Run",
-    "Python.create_users.executor": "Run",
-    "Python.daily_transaction (1).executor": "Run",
-    "Python.daily_transaction.executor": "Run",
-    "Python.database.executor": "Run",
-    "Python.get_user_from_db.executor": "Run",
-    "Python.librarian.executor": "Run",
-    "Python.login_website.executor": "Run",
-    "Python.update_db (1).executor": "Run",
-    "Python.update_db.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python.classes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.connect_wallet.executor&quot;: &quot;Run&quot;,
+    &quot;Python.create_users.executor&quot;: &quot;Run&quot;,
+    &quot;Python.daily_transaction (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.daily_transaction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_rewards.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_user_from_db.executor&quot;: &quot;Run&quot;,
+    &quot;Python.librarian.executor&quot;: &quot;Run&quot;,
+    &quot;Python.login_website.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tweeter check.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tweeter_check (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.tweeter_check.executor&quot;: &quot;Run&quot;,
+    &quot;Python.update_db (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.update_db.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.daily_transaction (1)">
-    <configuration name="daily_transaction (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="Python.get_rewards">
+    <configuration name="classes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="test_task_tir2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/entities" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/entities/classes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_rewards" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test_task_tir2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,7 +106,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tests/daily_transaction.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tests/get_rewards.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -93,51 +115,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="daily_transaction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="test_task_tir2" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/daily_transaction.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="get_user_from_db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="test_task_tir2" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/get_user_from_db.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="update_db (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="login_website" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test_task_tir2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,7 +128,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tests/update_db.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tests/login_website.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,7 +137,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="update_db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test_task_tir2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -168,11 +146,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/update_db.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tests/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tweeter_check" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test_task_tir2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/tests/tweeter_check.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -182,19 +182,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.daily_transaction" />
-      <item itemvalue="Python.daily_transaction (1)" />
-      <item itemvalue="Python.update_db (1)" />
-      <item itemvalue="Python.get_user_from_db" />
-      <item itemvalue="Python.update_db" />
+      <item itemvalue="Python.classes" />
+      <item itemvalue="Python.get_rewards" />
+      <item itemvalue="Python.login_website" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.tweeter_check" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.daily_transaction (1)" />
-        <item itemvalue="Python.update_db (1)" />
-        <item itemvalue="Python.daily_transaction" />
-        <item itemvalue="Python.update_db" />
-        <item itemvalue="Python.get_user_from_db" />
+        <item itemvalue="Python.get_rewards" />
+        <item itemvalue="Python.tweeter_check" />
+        <item itemvalue="Python.classes" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.login_website" />
       </list>
     </recent_temporary>
   </component>
@@ -238,11 +238,38 @@
       <option name="project" value="LOCAL" />
       <updated>1740179797815</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="исправление ошибок + ежедневная транзакция">
+      <option name="closed" value="true" />
+      <created>1740551491172</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740551491172</updated>
+    </task>
+    <task id="LOCAL-00005" summary="async логин, регистрация">
+      <option name="closed" value="true" />
+      <created>1740581561255</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740581561255</updated>
+    </task>
+    <task id="LOCAL-00006" summary="выполнение заданий с твиттером, клейм наград">
+      <option name="closed" value="true" />
+      <created>1741043085315</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741043085315</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="База данных + класс юзер + тест" />
-    <option name="LAST_COMMIT_MESSAGE" value="База данных + класс юзер + тест" />
+    <MESSAGE value="исправление ошибок + ежедневная транзакция" />
+    <MESSAGE value="async логин, регистрация" />
+    <MESSAGE value="выполнение заданий с твиттером, клейм наград" />
+    <option name="LAST_COMMIT_MESSAGE" value="выполнение заданий с твиттером, клейм наград" />
   </component>
 </project>

@@ -32,12 +32,12 @@ create_db_and_tables()
 email2 = create_email()
 wallet1 = Wallet("test_key", "test_key")
 wallet2 = Wallet("test_key1", "test_key1")
-user1 = User(create_email(),create_password(),"twitter1",wallet1)
-user2 = User(email2,create_password(),"twitter1",wallet2)
+user1 = User(create_email(), create_password(), "twitter1", wallet1)
+user2 = User(email2, create_password(), "twitter1", wallet2)
 first_note = UserBase(email=user1.get_email(), password=user1.get_password(), twitter=user1.get_twitter(),
                       wallet_address=user1.get_wallet().get_address(), wallet_key=user1.get_wallet().get_private_key())
 second_note = UserBase(email=user2.get_email(), password=user2.get_password(), twitter=user2.get_twitter(),
-                      wallet_address=user2.get_wallet().get_address(), wallet_key=user2.get_wallet().get_private_key())
+                       wallet_address=user2.get_wallet().get_address(), wallet_key=user2.get_wallet().get_private_key())
 create_user(first_note)
 create_user(second_note)
 

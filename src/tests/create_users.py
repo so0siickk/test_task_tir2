@@ -9,7 +9,7 @@ from src.repositores.librarian import create_user, create_db_and_tables
 def create_password():
     alphabet = string.ascii_letters + string.digits
     while True:
-        password = ''.join(secrets.choice(alphabet) for i in range(10))
+        password = ''.join(secrets.choice(alphabet) for _ in range(10))
         if (any(c.islower() for c in password)
                 and any(c.isupper() for c in password)
                 and sum(c.isdigit() for c in password) >= 3):
@@ -20,7 +20,7 @@ def create_password():
 def create_email():
     alphabet = string.ascii_letters + string.digits
     while True:
-        email = ''.join(secrets.choice(alphabet) for i in range(10))
+        email = ''.join(secrets.choice(alphabet) for _ in range(10))
         if (any(c.islower() for c in email)
                 and any(c.isupper() for c in email)
                 and sum(c.isdigit() for c in email) >= 3):
